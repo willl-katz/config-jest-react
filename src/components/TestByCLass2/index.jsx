@@ -46,10 +46,10 @@ export default class TestByClass2 extends Component {
 
         const filteredPosts = searchValue
             ? allPosts.filter((post) => {
-                  return post.title
-                      .toLowerCase()
-                      .includes(searchValue.toLowerCase());
-              })
+                return post.title
+                    .toLowerCase()
+                    .includes(searchValue.toLowerCase());
+            })
             : posts;
 
         return (
